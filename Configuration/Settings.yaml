@@ -4,3 +4,12 @@ Neos:
       bootstrap:
         title: 'Bootstrap'
         parentPreset: default
+        formElementTypes:
+          'Neos.Form:FormElement':
+            properties:
+              labelClassAttribute: ''
+              containerClassAttribute: 'form-group'
+              containerInnerClassAttribute: ''
+              elementClassAttribute: form-control
+              elementErrorClassAttribute: has-error
+              elementType: text
