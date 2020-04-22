@@ -5,6 +5,22 @@ Neos:
         title: 'Bootstrap'
         parentPreset: default
         formElementTypes:
+          'Neos.Form:Base':
+            renderingOptions:
+              templatePathPattern: 'resource://{@package}/Private/Form/{@type}.html'
+              partialPathPattern: 'resource://PSIT.BootstrapForm/Private/Templates/Form/Partials/{@type}.html'
+              layoutPathPattern: 'resource://{@package}/Private/Form/Layouts/{@type}.html'
+              translationSource: Form
+              translationPackage: PSIT.BootstrapForm
+              validationErrorTranslationPackage: PSIT.BootstrapForm
+          'Neos.Form:Form':
+            renderingOptions:
+              formClassAttribute: form
+              formPrevButtonClassAttribute: 'btn btn-secondary'
+              formNextButtonClassAttribute: 'btn btn-primary'
+              formSubmitButtonClassAttribute: 'btn btn-success'
+              containerClassAttribute: col-12
+              actionClassAttribute: col-12
           'Neos.Form:FormElement':
             properties:
               labelClassAttribute: ''
@@ -13,3 +29,6 @@ Neos:
               elementClassAttribute: form-control
               elementErrorClassAttribute: has-error
               elementType: text
+          'Neos.Form:MultiLineText':
+            properties:
+              elementClassAttribute: form-control
