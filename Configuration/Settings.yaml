@@ -1,0 +1,6 @@
+Neos:
+  Form:
+    presets:
+      bootstrap:
+        title: 'Bootstrap'
+        parentPreset: default

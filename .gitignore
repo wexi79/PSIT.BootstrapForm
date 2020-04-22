@@ -1,0 +1,9 @@
+.idea
+.idea/*
+*.iml
+out
+gen
+*.po
+*.mo
+*.pot
+

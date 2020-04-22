@@ -1,0 +1,15 @@
+{
+  "description": "Bootstrap forms for Neos 5",
+  "type": "neos-package",
+  "name": "psit/bootstrapform",
+  "require": {
+    "neos/neos": "~5.0"
+  },
+  "license": "MIT",
+  "extra": {
+    "neos": {
+      "package-key": "PSIT.BootstrapForm"
+    }
+  }
+
+}
